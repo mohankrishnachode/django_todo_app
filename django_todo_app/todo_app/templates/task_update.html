@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% load bootstrap5 %}
+{% block content %}
+<h1>Update task</h1>
+<form method = "POST">
+    {% csrf_token %}
+    {% block form %}
+        {% bootstrap_form form %}
+    {% endblock %}
+    <button class = "btn btn-primary" type="submit">Create</button>
+</form>
+{% endblock %}
