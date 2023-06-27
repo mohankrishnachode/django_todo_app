@@ -3,7 +3,10 @@
 
 {% block content %}
     <h2>Task List</h2>
-    <a href="{% url 'task_create' %}" class="btn btn-primary mb-3">Add Task</a>
+    <div class="d-flex justify-content-between m-2">
+        <a href="{% url 'task_create' %}" class="btn btn-primary mb-3">Add Task</a>
+        <a class="btn btn-primary mb-3" href="{% url 'user_logout' %}">Logout</a>
+    </div>
     <table class="table">
         <thead>
             <tr>
